@@ -1,0 +1,446 @@
+programa
+{
+	inclua biblioteca Util --> util
+	
+	funcao inicio()
+	{
+		//atividade_1() //ok
+		//esperarEnter()
+		
+		//atividade_2() // ok
+	      //esperarEnter()
+		
+		//atividade_3() //ok
+		// esperarEnter()
+		 
+		 //atividade_4() //ok
+		 //esperarEnter()
+		 
+		// atividade_5() 
+          //esperarEnter()
+          
+          // atividade_6()
+          //esperarEnter()
+          
+         // atividade_7() 
+          //esperarEnter()
+          
+         // atividade_8() 
+        // esperarEnter()
+
+         // atividade_9() // testar a parte do deserto
+          //esperarEnter()
+         
+         
+	}
+	funcao esperarEnter(){
+		cadeia Esperando
+		escreva("\n\n[ENTER PARA CONTINUAR]\n\n")
+		leia(Esperando)
+		limpa()
+	}
+	funcao atividade_1(){
+		
+		inteiro vetor[5] = {20,30,50,60,90}
+		
+
+		
+        
+         para (inteiro i = 0; i < 5; i++)
+        {
+            escreva(vetor[i], "\n") 
+        }
+       
+	}
+        
+       funcao atividade_2(){
+		
+		inteiro vetor[5] = {20,30,50,60,90}
+		
+
+		
+        
+         para (inteiro i = 4; i >= 0; i--)
+        {
+            escreva(vetor[i], "\n") 
+       
+           
+        }
+        
+       }
+
+   
+       funcao atividade_3(){
+    	inteiro numero[4] 
+      inteiro soma = 0
+      	
+      
+		 para (inteiro i = 0; i < 4; i++){
+		 
+        
+            escreva("Digite uma nota:  ")
+            leia(numero[i]) 
+           
+        }
+        
+        
+        para (inteiro i = 0; i < 4; i++)
+        {
+            
+            soma = soma + numero[i]
+        
+     escreva(numero[i], " ","-")
+
+        }
+        
+        escreva("\n","A soma dos elementos é: ", soma)
+
+        }
+        funcao atividade_4(){
+        	inteiro matriz [10] 
+		 para(inteiro i=0; i < 10; i++){
+			
+				escreva ("Informe um valor inteiro: ")
+				leia (matriz  [i])
+		}
+		
+		para(inteiro i=0; i < 10; i++){
+		
+				se(matriz[i] % 2 == 0){
+				inteiro num = matriz [i]
+				escreva ("O número ", num ," é par e esta na posição " ,i,"\n")
+				
+
+		}
+		}
+        }
+
+        
+        funcao atividade_5(){
+       inteiro sorteado
+		inteiro sorteados[10]
+		logico repetido
+
+		para(inteiro i=0; i < 10; i++){
+
+			repetido = falso
+			sorteado= Util.sorteia(1,100)
+	
+			para(inteiro j=0; j < 10; j++){
+				se (sorteado == sorteados[j]){
+					repetido = verdadeiro
+					i--
+					
+					pare
+	                  }
+                 }
+
+			se (nao repetido){
+				sorteados[i] = sorteado
+				escreva (sorteado," - ")
+}
+		}
+        }
+
+funcao atividade_6 ()
+	{
+	
+    inteiro numeros[30]
+    inteiro numero, cont = 0
+    
+    escreva("Digite um número entre 1 e 15: ")
+    leia(numero)
+   
+    para (inteiro i = 0; i < 30; i++) {
+        numeros[i] = util.sorteia(1, 15)
+    }
+     para (inteiro i = 0; i < 30; i++) {
+        se (numeros[i] == numero) {
+            cont = cont + 1
+            escreva("O número ", numero, " foi encontrado na posição ", i, ".\n")
+        }
+    }
+
+    
+    se (cont == 0) {
+        escreva("O número ", numero, " não foi encontrado.")
+    } senao {
+        escreva("O número e  apareceu ", cont, " vezes.")
+    }
+	}
+
+	
+
+
+  funcao atividade_7() {
+    
+    inteiro listaPares[5]
+    inteiro listaImpares[5]
+    inteiro MostraVetor[10]
+
+    
+
+    para (inteiro i = 0; i < 5; i++) {
+      inteiro digitado
+      escreva("Digite um número par: ")
+      leia(digitado)
+
+      se (digitado % 2 == 0) {
+        listaPares[i] = digitado
+      } senao {
+        escreva("Número digitado não é par, digite outro número.\n")
+        util.aguarde(2000)
+        limpa()
+        
+        i = i - 1  
+      }
+      
+    }
+    limpa()
+   
+    para (inteiro i = 0; i < 5; i++) {
+      inteiro digitado
+      escreva("Digite um número ímpar: ")
+      leia(digitado)
+
+      se (digitado % 2 == 1) {
+        listaImpares[i] = digitado
+      } senao {
+        escreva("Número digitado não é ímpar,digite outro número.\n")
+         util.aguarde(2000)
+         limpa()
+        
+        i = i - 1 
+      }
+      
+    }
+
+    limpa()
+    para (inteiro i = 0; i < 5; i++) {
+      MostraVetor[i] = listaImpares[i]  
+      MostraVetor[i + 5] = listaPares[i]  
+    }
+
+    
+    para (inteiro i = 0; i < 10; i++) {
+      escreva( MostraVetor[i], "\n")
+    }
+ }
+	
+ funcao atividade_8()
+	{
+		
+		inteiro matriz [3][5] 
+		 para(inteiro i=0; i < 3; i++){
+			para(inteiro j=0; j < 5; j++){
+				escreva ("Informe um número: ")
+				leia (matriz  [i][j])
+		}
+
+		}
+		
+		para(inteiro i=0; i < 3; i++){
+			para(inteiro j=0; j < 5; j++){
+				se(matriz[i][j] % 2 == 0){
+				inteiro num = matriz [i][j]
+				escreva ("\n")
+				escreva ("O número ", num ," é par e esta na posição " ,i," x ",j,"\n")
+				
+
+		}
+
+		}
+	
+}
+}
+
+funcao  atividade_9()
+  {
+  	
+  	cadeia vegetacao_escolhida
+  	cadeia cor_escolhida
+  	cadeia cor_1 = "Amarelo"
+  	cadeia cor_2 = "Azul"
+  	cadeia cor_3 = "Cinza"
+  	cadeia cor_4 = "Laranja"
+  	cadeia cor_5 = "Preto"
+  	cadeia cor_6 = "Roxo"
+  	cadeia cor_7 = "Verde"
+  	cadeia cor_8 ="Vermelho"
+   
+	cadeia vegetacao  [3] = {"Floresta Tropical","Savana","Deserto"}
+	
+	
+	  para(inteiro i=0; i < 3; i++){
+		escreva (vegetacao[i],"\n")
+		
+
+   
+		}
+ escreva  ("Escolha um tipo de  Vegetação: \n")
+leia (vegetacao_escolhida)
+	escreva (" \n")
+	limpa()
+
+      cadeia cor [8] = {"Amerelo","Azul","Verde","Cinza","Vermelho","Roxo","Laranja","Preto"} // falta a cor preta 
+	 
+	
+	  para(inteiro i=0; i < 8; i++){
+		escreva (cor[i],"\n")
+		
+
+
+		}
+
+    escreva("Escolha uma cor: \n")
+    leia(cor_escolhida)
+
+    escreva ("\n")
+    limpa ()
+
+  
+
+ se (vegetacao_escolhida == "Floresta Tropical" e cor_escolhida == "Cinza"){
+  escreva  ("O animal que representam você é o elefante, você é uma pessoa resiliente,forte e amavél, \n")
+   escreva ( "portadora de uma grande sabedoria, tem uma grande energia\n")
+  
+}
+ se (vegetacao_escolhida == "Floresta Tropical" e cor_escolhida == "Verde"){
+  escreva  ("O animal que representam você é o papagaio, você é uma pessoa Gentil, bonita e alegre, ")
+   escreva ("e possui o dom da oralidade. \n")
+}
+
+se ( vegetacao_escolhida == "Floresta Tropical" e cor_escolhida == "Laranja"){
+  escreva  ("O animal que combina com você é o mico-leão-dourado, como esse animal você luta pelo que é certo e também é um simbolo, ")
+   escreva (" de sua força e coragem. \n") }
+
+se (vegetacao_escolhida == "Floresta Tropical" e  cor_escolhida == "Azul"){
+ escreva  ("O animal que combina com você é a arara-Azul assim como ela você voa em direção a liberdade e ")
+   escreva (" possui esperança no amanhã. \n") }
+
+se (vegetacao_escolhida == "Floresta Tropical" e  cor_escolhida == "Roxo"){
+ escreva  ("O animal que combina com você é a Cotinga-roxa, assim como ela você possui varios tipos de beleza  ")
+   escreva (" tanto a fisica quando a intelectual. \n") }
+
+   se (vegetacao_escolhida == "Floresta Tropical" e  cor_escolhida == "Vermelho"){
+     escreva  ("O animal que combina com você é o pássaro guara ")
+   escreva (" assim como essa ave você modelando seu caracter e personalidade sua verdadeira cor. \n")
+   escreva ("(Esses pássaro nasce com as penas acinzentadas e só depois de um ano adquire a cor avermelhada,\n")
+ escreva (" por causa de sua alimentação, a única ave marinha com coloração vermelha no mundo.) \n") }
+
+    se  (vegetacao_escolhida == "Floresta Tropical" e  cor_escolhida == "Amarelo"){
+ escreva  ("O animal que combina com você é o peixe-dourado ")
+   escreva ("Esse animal é simbolo da sorte, crescente riqueza e prosperidade empresarial. \n")
+   escreva ("Você é uma pessoa muito rica de varias formas tanto de dinheiro, quanto de sáude, e se você for um empressario tem muita prosperidade  \n")
+ escreva ("e sorte na vida e négocios. \n") 
+ }
+
+ se (vegetacao_escolhida == "Floresta Tropical" e  cor_escolhida == "Preto"){
+ escreva  ("O animal que combina com você é a pantera negra.\n")
+   escreva ("Sua determinação é inigualável nada te abala tema coragem e determinação, para enfrentar os desafios da vida. \n")
+   
+ }
+ 
+ se (vegetacao_escolhida == "Savana" e  cor_escolhida == cor_1){
+ escreva  ("O animal que combina com você é o leão. \n")
+   escreva ("Você detêm uma força interior giagntesca é uma lider nata.\n")}
+  
+
+   se (vegetacao_escolhida == "Savana" e  cor_escolhida == cor_2){
+ escreva  ("O animal que combina com você é  besouro azul.\n")
+   escreva ("Como o besouro azul que sai das profundezas do solo e vai em direção a luz. \n")
+   escreva ("Você caminha em direção há luz e tudo o que se propõe faz com determinação e não desiste. \n")}
+ 
+  
+   se (vegetacao_escolhida == "Savana" e  cor_escolhida == cor_3){
+ escreva  ("O animal que combina com você é o rinoceronte. \n")
+   escreva ("Como o rinocerante você é uma pessoa determinada, firme em seus propósitos e convicções. \n")}
+  
+
+   se (vegetacao_escolhida == "Savana" e  cor_escolhida == cor_4){
+ escreva  ("O animal que combina com você é o cervo-de-cauda-branca. \n")
+   escreva ("Sua pureza é cativante e impressiona por onde passa e sabe como aproveitar a vida do seu jeito . \n")}
+  
+   se (vegetacao_escolhida == "Savana" e  cor_escolhida == cor_5){
+ escreva  ("O animal que combina com você é a águia-de-cabeça-preta \n")
+   escreva ("Como esse animal você é uma pessoa nobre de esperito e que valoriza sua liberdade. \n")}
+
+  se (vegetacao_escolhida == "Savana" e  cor_escolhida == cor_6){
+ escreva  ("O animal que combina com você é o  pavão-de-cauda-roxa \n")
+   escreva ("Apesar do pavão um do ser considerado o animal mais bonito do mundo ele também é a associado a compaixão e amor. \n")
+   escreva ("Você é uma pessoa que sente compaixão e amor por pessoas conhecidas e desconhecidas, ")
+   escreva ("sempre tentando ajudar quem precisa. \n")
+   escreva ("(Esse pavão não é da savana, animais com a coloração roxas ou se assemelham aos roxo são muito raros). \n")}
+ 
+   se (vegetacao_escolhida == "Savana" e  cor_escolhida == cor_7){
+ escreva  ("O animal que combina com você é o  camaleão-de-cauda-em-forma-de-folha \n")
+   escreva ("Assim como o cameleão você muda coisas na sua vida muito rápido, ")
+   escreva ("isso pode ser bom ou ruim basta escolher as mudanças certas. \n")}
+ 
+ se (vegetacao_escolhida == "Savana" e  cor_escolhida == cor_8){
+ escreva  ("O animal que combina com você é a Formiga-vermelha  \n")
+   escreva ("Você é um ótimo comunicador gosta de  resolver problemas em equipe. \n")}
+ 
+ //deserto
+ //deserto
+ //deserto
+
+   se (vegetacao_escolhida == "Deserto" e  cor_escolhida == cor_1){
+ escreva  ("O animal que combina com você é escorpião-amarelo-do-deserto.\n")
+   escreva ("Vocé admira beleza nas pequenas coisas ao seu redor e quase sempre tem boa autoestima. \n")}
+ 
+  
+  se (vegetacao_escolhida == "Deserto" e  cor_escolhida == cor_2){ // testra a partir daqui
+ escreva  ("O animal que combina com você é a  borboleta azul-do-deserto.\n")
+   escreva ("Vocé é uma pessoa repleta de esperança e passou por varias transformaçoês. \n")}
+ 
+
+  se (vegetacao_escolhida == "Deserto" e  cor_escolhida == cor_3){
+ escreva  ("O animal que combina com você é  o furão-do-deserto.\n")
+   escreva ("Apesar de sua fama não muito boa alguns furoes são muito carinhosos, ")
+   escreva ("você é muito carinhosa e tem uma grande curiosidade. \n")}
+ 
+  
+
+  se (vegetacao_escolhida == "Deserto" e  cor_escolhida == cor_4){
+ escreva  ("O animal que combina com você é o  Lagarto-de-cauda-de-fogo   \n")
+   escreva (" Você valoriza suas amizades verdadeiras, seu guia é a razão e pouco a emoção. \n")}
+ 
+  
+
+  se (vegetacao_escolhida == "Deserto" e  cor_escolhida == cor_5){
+ escreva  ("O animal que combina com você é corvo-do-deserto.\n")
+   escreva ("Mesmo o corvo tendo uma fama sombria ele, porém  o covrvo é uma das aves mais inteligentes do mundo, ")
+   escreva ("aprecie sua própria sabedoria e reflita um pouco sobre a morte. \n")}
+ 
+  
+  se (vegetacao_escolhida == "Deserto" e  cor_escolhida == cor_6){
+ escreva  ("O animal que combina com você é lagarto-espinho-do-deserto   \n")
+   escreva (" Você sempre busca evoluir tanto fisicamente e esperitualmente . \n")}
+ 
+  
+  se (vegetacao_escolhida == "Deserto" e  cor_escolhida == cor_7){
+ escreva  ("O animal que combina com você é grilo-do-deserto. \n")
+   escreva ("Você é uma pessoa feliz muito alegre e a cada dia você se renova. \n")}
+ 
+  
+  se (vegetacao_escolhida == "Deserto" e  cor_escolhida == cor_8){
+ escreva  ("O animal que combina com você é camelo.\n")
+   escreva (" Você é uma pessoa resiliente e se adpta aos desafios que a vida lhe dá e a lugares também. \n")}
+ 
+  }
+        	
+	}
+
+							
+
+                                         	          
+    
+                   
+
+
+
+   
+       
+	
+
