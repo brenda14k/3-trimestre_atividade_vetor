@@ -151,7 +151,7 @@ funcao atividade_6 ()
     inteiro numeros[30]
     inteiro numero, cont = 0
     
-    escreva("Digite um número entre 1 e 15: ")
+    escreva("Digite um número entre 1 á 15: ")
     leia(numero)
    
     para (inteiro i = 0; i < 30; i++) {
