@@ -4,32 +4,32 @@ programa
 	
 	funcao inicio()
 	{
-		//atividade_1() //ok
-		//esperarEnter()
+		atividade_1() 
+		esperarEnter()
 		
-		//atividade_2() // ok
-	      //esperarEnter()
+		atividade_2() 
+	     esperarEnter()
 		
-		//atividade_3() //ok
-		// esperarEnter()
+		atividade_3() 
+		esperarEnter()
 		 
-		 //atividade_4() //ok
-		 //esperarEnter()
+		atividade_4() 
+		esperarEnter()
 		 
-		// atividade_5() 
-          //esperarEnter()
+		atividade_5() 
+          esperarEnter()
           
-          // atividade_6()
-          //esperarEnter()
+          atividade_6()
+          esperarEnter()
           
-         // atividade_7() 
-          //esperarEnter()
+         atividade_7() 
+         esperarEnter()
           
-         // atividade_8() 
-        // esperarEnter()
+         atividade_8() 
+         esperarEnter()
 
-         // atividade_9() // testar a parte do deserto
-          //esperarEnter()
+         atividade_9() 
+       esperarEnter()
          
          
 	}
@@ -96,6 +96,8 @@ programa
         escreva("\n","A soma dos elementos é: ", soma)
 
         }
+
+        
         funcao atividade_4(){
         	inteiro matriz [10] 
 		 para(inteiro i=0; i < 10; i++){
@@ -142,6 +144,7 @@ programa
 		}
         }
 
+
 funcao atividade_6 ()
 	{
 	
@@ -171,8 +174,7 @@ funcao atividade_6 ()
 
 	
 
-
-  funcao atividade_7() {
+funcao atividade_7() {
     
     inteiro listaPares[5]
     inteiro listaImpares[5]
@@ -226,6 +228,8 @@ funcao atividade_6 ()
       escreva( MostraVetor[i], "\n")
     }
  }
+
+ 
 	
  funcao atividade_8()
 	{
@@ -254,8 +258,11 @@ funcao atividade_6 ()
 }
 }
 
+
+
 funcao  atividade_9()
   {
+  	// Essa parte tem um bug a primeira vez que digita a cor ele não puxa a parte escrita, se isso acontecer reinicie o programa aí ele puxa não sei qual é o problema.
   	
   	cadeia vegetacao_escolhida
   	cadeia cor_escolhida
@@ -267,79 +274,68 @@ funcao  atividade_9()
   	cadeia cor_6 = "Roxo"
   	cadeia cor_7 = "Verde"
   	cadeia cor_8 ="Vermelho"
-   
+                                 
 	cadeia vegetacao  [3] = {"Floresta Tropical","Savana","Deserto"}
 	
-	
-	  para(inteiro i=0; i < 3; i++){
+	 para(inteiro i=0; i < 3; i++){
+	  	
 		escreva (vegetacao[i],"\n")
+		escreva ("\n")}
 		
-
-   
-		}
  escreva  ("Escolha um tipo de  Vegetação: \n")
 leia (vegetacao_escolhida)
 	escreva (" \n")
 	limpa()
 
-      cadeia cor [8] = {"Amerelo","Azul","Verde","Cinza","Vermelho","Roxo","Laranja","Preto"} // falta a cor preta 
+      cadeia cor [8] = {"Amerelo","Azul","Cinza","Laranja","Preto","Roxo","Verde","Vermelho"} 
 	 
 	
 	  para(inteiro i=0; i < 8; i++){
+	  	
 		escreva (cor[i],"\n")
-		
-
-
-		}
+	     	escreva ("\n")}
 
     escreva("Escolha uma cor: \n")
     leia(cor_escolhida)
 
     escreva ("\n")
     limpa ()
-
-  
-
- se (vegetacao_escolhida == "Floresta Tropical" e cor_escolhida == "Cinza"){
-  escreva  ("O animal que representam você é o elefante, você é uma pessoa resiliente,forte e amavél, \n")
-   escreva ( "portadora de uma grande sabedoria, tem uma grande energia\n")
-  
-}
- se (vegetacao_escolhida == "Floresta Tropical" e cor_escolhida == "Verde"){
-  escreva  ("O animal que representam você é o papagaio, você é uma pessoa Gentil, bonita e alegre, ")
-   escreva ("e possui o dom da oralidade. \n")
-}
-
-se ( vegetacao_escolhida == "Floresta Tropical" e cor_escolhida == "Laranja"){
-  escreva  ("O animal que combina com você é o mico-leão-dourado, como esse animal você luta pelo que é certo e também é um simbolo, ")
-   escreva (" de sua força e coragem. \n") }
-
-se (vegetacao_escolhida == "Floresta Tropical" e  cor_escolhida == "Azul"){
- escreva  ("O animal que combina com você é a arara-Azul assim como ela você voa em direção a liberdade e ")
-   escreva (" possui esperança no amanhã. \n") }
-
-se (vegetacao_escolhida == "Floresta Tropical" e  cor_escolhida == "Roxo"){
- escreva  ("O animal que combina com você é a Cotinga-roxa, assim como ela você possui varios tipos de beleza  ")
-   escreva (" tanto a fisica quando a intelectual. \n") }
-
-   se (vegetacao_escolhida == "Floresta Tropical" e  cor_escolhida == "Vermelho"){
-     escreva  ("O animal que combina com você é o pássaro guara ")
-   escreva (" assim como essa ave você modelando seu caracter e personalidade sua verdadeira cor. \n")
-   escreva ("(Esses pássaro nasce com as penas acinzentadas e só depois de um ano adquire a cor avermelhada,\n")
- escreva (" por causa de sua alimentação, a única ave marinha com coloração vermelha no mundo.) \n") }
-
-    se  (vegetacao_escolhida == "Floresta Tropical" e  cor_escolhida == "Amarelo"){
+    
+// Floresta Tropical
+   se  (vegetacao_escolhida == "Floresta Tropical" e  cor_escolhida == cor_1){
  escreva  ("O animal que combina com você é o peixe-dourado ")
    escreva ("Esse animal é simbolo da sorte, crescente riqueza e prosperidade empresarial. \n")
    escreva ("Você é uma pessoa muito rica de varias formas tanto de dinheiro, quanto de sáude, e se você for um empressario tem muita prosperidade  \n")
  escreva ("e sorte na vida e négocios. \n") 
  }
 
- se (vegetacao_escolhida == "Floresta Tropical" e  cor_escolhida == "Preto"){
- escreva  ("O animal que combina com você é a pantera negra.\n")
-   escreva ("Sua determinação é inigualável nada te abala tema coragem e determinação, para enfrentar os desafios da vida. \n")
+se (vegetacao_escolhida == "Floresta Tropical" e  cor_escolhida == cor_2){
+ escreva  ("O animal que combina com você é a arara-Azul assim como ela você voa em direção a liberdade e ")
+   escreva (" possui esperança no amanhã. \n") }
    
- }
+ se (vegetacao_escolhida == "Floresta Tropical" e cor_escolhida == cor_3){
+  escreva  ("O animal que representam você é o elefante, você é uma pessoa resiliente, forte e amavél, \n")
+   escreva ( "portadora de uma grande sabedoria, tem uma grande energia\n")}
+
+   se ( vegetacao_escolhida == "Floresta Tropical" e cor_escolhida == cor_4){
+  escreva  ("O animal que combina com você é o mico-leão-dourado, como esse animal você luta pelo que é certo e também é um simbolo, ")
+   escreva (" de sua força e coragem. \n") }
+
+   se (vegetacao_escolhida == "Floresta Tropical" e  cor_escolhida == cor_6){
+ escreva  ("O animal que combina com você é a Cotinga-roxa, assim como ela você possui varios tipos de beleza  ")
+   escreva (" tanto a fisica quando a intelectual. \n") }
+
+ se (vegetacao_escolhida == "Floresta Tropical" e cor_escolhida == cor_7){
+  escreva  ("O animal que representam você é o papagaio, você é uma pessoa Gentil, bonita e alegre, ")
+   escreva ("e possui o dom da oralidade. \n")}
+
+se (vegetacao_escolhida == "Floresta Tropical" e  cor_escolhida == cor_8){
+     escreva  ("O animal que combina com você é o pássaro guara ")
+   escreva (" assim como essa ave você modelando seu caracter e personalidade sua verdadeira cor. \n")
+   escreva ("(Esses pássaro nasce com as penas acinzentadas e só depois de um ano adquire a cor avermelhada,\n")
+ escreva (" por causa de sua alimentação, a única ave marinha com coloração vermelha no mundo.) \n") }
+
+//Savana
  
  se (vegetacao_escolhida == "Savana" e  cor_escolhida == cor_1){
  escreva  ("O animal que combina com você é o leão. \n")
@@ -382,8 +378,6 @@ se (vegetacao_escolhida == "Floresta Tropical" e  cor_escolhida == "Roxo"){
    escreva ("Você é um ótimo comunicador gosta de  resolver problemas em equipe. \n")}
  
  //deserto
- //deserto
- //deserto
 
    se (vegetacao_escolhida == "Deserto" e  cor_escolhida == cor_1){
  escreva  ("O animal que combina com você é escorpião-amarelo-do-deserto.\n")
@@ -403,8 +397,8 @@ se (vegetacao_escolhida == "Floresta Tropical" e  cor_escolhida == "Roxo"){
   
 
   se (vegetacao_escolhida == "Deserto" e  cor_escolhida == cor_4){
- escreva  ("O animal que combina com você é o  Lagarto-de-cauda-de-fogo   \n")
-   escreva (" Você valoriza suas amizades verdadeiras, seu guia é a razão e pouco a emoção. \n")}
+ escreva  ("O animal que combina com você é o Lagarto-de-cauda-de-fogo.\n")
+   escreva ("Você valoriza suas amizades verdadeiras, seu guia é a razão e pouco a emoção.\n")}
  
   
 
@@ -415,8 +409,9 @@ se (vegetacao_escolhida == "Floresta Tropical" e  cor_escolhida == "Roxo"){
  
   
   se (vegetacao_escolhida == "Deserto" e  cor_escolhida == cor_6){
- escreva  ("O animal que combina com você é lagarto-espinho-do-deserto   \n")
-   escreva (" Você sempre busca evoluir tanto fisicamente e esperitualmente . \n")}
+ escreva  ("O animal que combina com você é lagarto-espinho-do-deserto. \n")
+   escreva ("Você sempre busca evoluir tanto fisicamente, quanto esperitualmente. \n")
+   escreva ("(Esse animal não é roxo, deserto não possui animais com uma coloração. \n)")}
  
   
   se (vegetacao_escolhida == "Deserto" e  cor_escolhida == cor_7){
@@ -426,7 +421,7 @@ se (vegetacao_escolhida == "Floresta Tropical" e  cor_escolhida == "Roxo"){
   
   se (vegetacao_escolhida == "Deserto" e  cor_escolhida == cor_8){
  escreva  ("O animal que combina com você é camelo.\n")
-   escreva (" Você é uma pessoa resiliente e se adpta aos desafios que a vida lhe dá e a lugares também. \n")}
+   escreva ("Você é uma pessoa resiliente e se adpta aos desafios que a vida lhe dá e a lugares também. \n")}
  
   }
         	
@@ -443,4 +438,3 @@ se (vegetacao_escolhida == "Floresta Tropical" e  cor_escolhida == "Roxo"){
    
        
 	
-
